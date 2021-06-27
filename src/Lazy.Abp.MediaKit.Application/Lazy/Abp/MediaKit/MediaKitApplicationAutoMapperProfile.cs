@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Lazy.Abp.MediaKit.Medias;
+using Lazy.Abp.MediaKit.Medias.Dto;
 
 namespace Lazy.Abp.MediaKit
 {
@@ -9,6 +11,10 @@ namespace Lazy.Abp.MediaKit
             /* You can configure your AutoMapper mapping configuration here.
              * Alternatively, you can split your mapping configurations
              * into multiple profile classes for a better organization. */
+
+
+            CreateMap<Media, MediaDto>()
+                .MapExtraProperties();
         }
     }
 }
