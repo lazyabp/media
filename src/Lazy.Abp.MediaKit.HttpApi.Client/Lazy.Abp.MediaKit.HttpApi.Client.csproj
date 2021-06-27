@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\common.build.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Http.Client" Version="$(AbpVersion)" />
+    <ProjectReference Include="..\Lazy.Abp.MediaKit.Application.Contracts\Lazy.Abp.MediaKit.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

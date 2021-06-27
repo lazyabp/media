@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\common.build.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="$(AbpVersion)" />
+    <ProjectReference Include="..\Lazy.Abp.MediaKit.Application.Contracts\Lazy.Abp.MediaKit.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Lazy.Abp.MediaKit.Domain\Lazy.Abp.MediaKit.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
