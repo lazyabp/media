@@ -15,6 +15,8 @@ namespace Lazy.Abp.MediaKit
 
             CreateMap<Media, MediaDto>()
                 .MapExtraProperties();
+
+            CreateMap<Media, MediaListDto>();
         }
     }
 }
