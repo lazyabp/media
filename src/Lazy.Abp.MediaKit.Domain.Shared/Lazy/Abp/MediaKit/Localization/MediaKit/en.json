@@ -1,7 +1,10 @@
 {
   "culture": "en",
   "texts": {
-    "ManageYourProfile":  "Manage your profile",
-    "SamplePageMessage": "A sample page for the MediaKit module"
+    "Permission:MediaKit": "Media Management",
+    "Permission:Media": "Media",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete"
   }
 }

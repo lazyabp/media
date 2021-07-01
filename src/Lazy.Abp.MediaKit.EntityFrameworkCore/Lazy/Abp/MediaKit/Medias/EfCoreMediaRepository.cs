@@ -22,6 +22,20 @@ namespace Lazy.Abp.MediaKit.Medias
         {
         }
 
+        public async Task<List<Media>> FindByIdsAsync(IEnumerable<Guid> ids, CancellationToken cancellationToken = default)
+        {
+            return await (await GetDbSetAsync())
+                .Where(q => ids.Contains(q.Id))
+                .ToListAsync(GetCancellationToken(cancellationToken));
+        }
+
+        public async Task<List<Media>> FindMd5sAsync(IEnumerable<string> md5s, CancellationToken cancellationToken = default)
+        {
+            return await (await GetDbSetAsync())
+                .Where(q => md5s.Contains(q.Md5))
+                .ToListAsync(GetCancellationToken(cancellationToken));
+        }
+
         public async Task<Media> GetByMd5Async(string md5, CancellationToken cancellationToken = default)
         {
             return await (await GetQueryableAsync())

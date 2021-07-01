@@ -1,7 +1,10 @@
 {
   "culture": "zh-Hans",
   "texts": {
-    "ManageYourProfile": "管理个人资料",
-    "SamplePageMessage": "MediaKit模块的示例页面"
+    "Permission:MediaKit": "媒体资源管理",
+    "Permission:Media": "媒体资源",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除"
   }
 }
