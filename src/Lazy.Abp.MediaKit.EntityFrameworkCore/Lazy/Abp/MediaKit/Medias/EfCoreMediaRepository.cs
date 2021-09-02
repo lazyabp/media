@@ -29,6 +29,13 @@ namespace Lazy.Abp.MediaKit.Medias
                 .FirstOrDefaultAsync(GetCancellationToken(cancellationToken));
         }
 
+        public async Task<List<Media>> GetByMd5sAsync(IEnumerable<string> md5s, CancellationToken cancellationToken = default)
+        {
+            return await (await GetQueryableAsync())
+                .Where(q => md5s.Contains(q.Md5))
+                .ToListAsync(GetCancellationToken(cancellationToken));
+        }
+
         public async Task<long> GetCountAsync(
             int? minSize = null,
             int? maxSize = null,
