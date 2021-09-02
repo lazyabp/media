@@ -4,7 +4,7 @@
     <Version>4.3.0-dev-02</Version>
     <NoWarn>$(NoWarn);CS1591;CS0436</NoWarn>
     <AbpProjectType>module</AbpProjectType>
-    <Authors>Scriptfan</Authors>
+    <Authors>LazyAbp</Authors>
     <PackageProjectUrl>https://github.com/lazyabp/media</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
